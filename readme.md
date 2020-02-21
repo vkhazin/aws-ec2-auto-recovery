@@ -27,4 +27,5 @@
 * Target EC2 instance is tagged
 * Snapshots suitable for restore are available in both regions
 * Snapshots are tagged and latest available will be used to re-provision the failed instance
-* In case snapshot is unavailable - re-provisioned will fail
+* In case snapshot is unavailable - re-provisioning process will fail
+* Non-recoverable errors will be written to log and will require human intervention
