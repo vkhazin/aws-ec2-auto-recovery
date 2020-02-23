@@ -29,3 +29,7 @@
 * Snapshots are tagged and latest available will be used to re-provision the failed instance
 * In case snapshot is unavailable - re-provisioning process will fail
 * Non-recoverable errors will be written to log and will require human intervention
+
+## Artifacts
+
+* [Draw.io diagram](./docs/RevizeMonitoring.drawio)
