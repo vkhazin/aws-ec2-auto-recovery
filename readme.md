@@ -7,10 +7,11 @@
 ## Objectives
 
 * Monitor availability of web-sites hosted on a single EC2 instance
-* On first failure restart the instance
-* On second failure re-provision the instance from a snapshot in the same region and re-assign Elastic Ip
-* On third failure re-provision the instance in DR region
-* Send email notification when more than 3 errors in a row have occurred, when a instance is getting provisioned in a DR region, and when an instance comes back-online after an outage
+* On first failure restart the instance and send notification email
+* On second failure re-provision the instance in the same region, send email notification, and re-assign Elastic IP
+* On third failure re-provision the instance in DR region and send notification email
+* On subsequent failures take no action other than send an email
+* In case the original instance becomes available after an outage, send notification email
 
 ## Scope
 
@@ -32,4 +33,4 @@
 
 ## Artifacts
 
-* [Draw.io diagram](./docs/RevizeMonitoring.drawio)
+* [Draw.io diagram](./docs/RevizeMonitoring.drawio), can be edited using http://draw.io/
